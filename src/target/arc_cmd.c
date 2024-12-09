@@ -1001,6 +1001,9 @@ const struct command_registration arc_cache_group_handlers[] = {
 		.usage = "",
 		.chain = arc_l2_cache_group_handlers,
 	},
+	{
+		.chain = rtt_target_command_handlers,,
+	},
 	COMMAND_REGISTRATION_DONE
 };
 
